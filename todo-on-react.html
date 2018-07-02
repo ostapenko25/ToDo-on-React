@@ -71,7 +71,7 @@
 					
 		// Final redner (default and render modes)
 			render() {
-					if (this.state.edit) { // если включено состояние edit (а оно включается по нажатии на кнопку) - то выводим форму редактирования
+					if (this.state.edit) { 
 					  return this.rendEdit ();
 					} else {
 					  return this.rendDefault ();
@@ -81,7 +81,7 @@
 			  
 
     				
-    // Component Fields, wich comtains an array with child components Tasks
+    // Component Fields, wich contains an array with child components Tasks
 
 	  class Field extends React.Component {
 		  
@@ -90,8 +90,7 @@
 			this.deleteBlock = this.deleteBlock.bind(this);
 			this.state = {
 			  tasks: [] // an array of tasks (empty by default)
-			};	
-			  
+			};				  
 		  };
 		  
 		 // Add new task block
@@ -126,8 +125,7 @@
 			
 		// Main page render
 		  render() {
-			return (
-						
+			return (						
 			  <div className="field">
 				<button onClick={this.add.bind (null, 'Here is task text')} className="btn new">Add new task</button>
 					<div className="tasks">
@@ -136,7 +134,6 @@
 			  </div>
 			);			  
 		  }
-
 		}
 
 	// Add components to the <div> with id="tasks-field" 
@@ -144,17 +141,17 @@
 		const place2 = document.getElementById("tasks-field");
 
 		ReactDOM.render (<header>
-								<h1>TO DO LIST</h1>
-								<h3>(made with React)</h3>				
-						 </header>,
-					     place1
-							);
+					<h1>TO DO LIST</h1>
+					<h3>(made with React)</h3>				
+				</header>,
+				place1
+				);
 
 		ReactDOM.render (<div className="field">				
-							<Field />
-						 </div>,
-					     place2
-							);
+					<Field />
+				</div>,
+				place2
+				);
 	  </script>
 	  
      </body>
