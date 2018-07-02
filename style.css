@@ -1,0 +1,107 @@
+body {
+  background-color: #dddddd;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+}
+
+h1, h3 {
+	margin: 10px;
+}
+
+.field { 
+  padding: 10px;
+  margin: 0 auto;
+  width: 90%;  
+  color: #000;
+  font-size: 1.1em; 
+  text-align: center;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  flex-wrap: wrap;
+  max-height: 80vh;
+  max-width: 100vw; 
+}
+
+.box {
+  border: 2px solid #aaa719;
+  background-color: #d4d37f;
+  margin: 10px 20px;
+  padding: 10px;  
+  min-width: 200px;	
+}
+
+.box:last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  margin-right: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 0.65em;
+  color: #fff;
+  outline: none;
+}
+
+.btn.light {
+  background-color: #4eafc9;
+  border: 2px solid #2a89a2;
+}
+
+
+.btn.light:hover {
+  background-color: #2a89a2;
+  border-color: #1d6f85;
+}
+
+.btn.red {
+  background-color: #dda66d;
+  border: 2px solid #b6821a;
+}
+
+.btn.red:hover {
+  background-color: #b6821a;
+  border-color: #946912;
+}
+
+.btn.success {
+  background-color: green;
+  border-color: #946912;
+  margin:0 30%;
+}
+
+.btn.new {
+  background-color: white;
+  border-color: #946912; 
+	 color: gray;
+	width: 100px;
+	margin: 10px auto;
+}
+
+.btn.new:hover {
+  background-color: gray;
+	color: white;
+  border-color: #1d6f85;	 
+}
+
+.btn.success:hover {
+  background-color: lightgreen;
+  border-color: #1d6f85;
+}
+
+.textedit {
+	margin: 0;	
+	font-style: arial;
+	font-size: 18px;
+}
+
